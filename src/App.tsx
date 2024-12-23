@@ -1,16 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { RootState } from './app/store';
+import { fetchHeroIconsStart, fetchHeroIconsSuccess, fetchHeroIconsFailure } from './app/heroSlice';
+import Main from './pages/Main';
+import DatabaseFetch from './app/DatabaseFetch';
+import ImpactStats from './pages/ProData';
+import ComputeStats from './app/statsSlice';
 function App() {
+  DatabaseFetch()
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>DotaBuddyMainPage</h1>
-        <h1><a href="././pages/Userpage">My stat page</a></h1>
-      </header>
+    <div>
+    <ImpactStats/>
+    <Main/>
     </div>
+    
   );
-}
+};
 
 export default App;

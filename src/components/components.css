@@ -1,0 +1,197 @@
+.heroBar {
+    width: 90%;
+    height: 100px;
+    background-color: var(--backgroundColor);
+    padding: 10px 20px; /* Add padding around the bar */
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 15px; /* Space below each hero bar */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.heroStats,
+.performanceStats {
+  display: flex;
+  flex-direction: row; /* Stack the stats vertically */
+  gap:5px;
+  font-size: 14px; /* Consistent font size */
+}
+
+.performanceStats {
+  margin-left: 20px; /* Add spacing from heroStats */
+}
+
+.ItemSet {
+  color:#28a745;
+  flex-shrink: 0; /* Prevent shrinking */
+  overflow: hidden;
+}
+.heroBar:hover {
+    filter: brightness(1.3);
+}
+
+.heroList {
+    width: 300px;            /* Adjust width as necessary */
+    margin: 20px auto;       /* Centering the list */
+    background-color: var(--backgroundColor2);
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    display:flex;
+  }
+  
+  
+  .heroList h1 {
+    font-size: 1.5rem !important;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--textColor);
+    font-weight: 600;
+  }
+  
+  
+  .miniHeroBar {
+    display: flex;
+    align-items: center;    
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: var(--backgroundColor3);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  /* Style for the hero icon */
+  .miniHeroBar img {
+    width: auto;            /* Adjust icon size as necessary */
+    height: 40px;
+    border-radius: 4px;
+    margin-right: 5px;
+  }
+
+ .miniHeroBar .winrate {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #28a745;          /* Green color for positive stats */
+  }
+.miniHeroBar:hover {
+  background-color: var(--blue1);
+}
+
+
+
+.miniHeroBar h3 {
+  margin: 0;
+  font-size: 14px;
+  color: var(--textColor);
+}
+/*                        */
+
+.heroIcon {
+    width: auto;
+    height: auto;
+    max-width: 5vw;
+    max-height: 5vh;
+    object-fit: contain;
+    
+}
+.itemContainer {
+  display: flex; 
+  gap: 20px; 
+  align-items: center; 
+  flex-direction: row;
+}
+
+.item-set {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.item-grid,
+.backpack-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-gap: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+.neutral-item {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ItemIcon.css */
+.item-icon {
+  width: 40px;
+  height: 30px;
+  background-color: #222;
+  border-radius: 3px;
+  border: black 3px solid;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-icon img {
+  width: 100% !important;
+  height: auto !important;
+  
+  display: block;
+}
+.matchBar {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  background-color: var(--backgroundColor);
+  transition: background-color 0.3s;
+  direction: ltr;
+}
+
+.matchBar:hover {
+  background-color: var(--blue1); /* Subtle hover effect */
+}
+
+.heroImage {
+  width: 60px;
+  height: 60px;
+  margin-right: 16px; /* Space between image and details */
+  border-radius: 4px;
+}
+
+.matchDetails {
+  flex: 1; /* Allow details to take up remaining space */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.matchDetails h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: var(--textColor);
+  
+}
+
+.matchDetails p {
+  margin: 4px 0;
+  font-size: 0.9em;
+  color: var(--textColor2);
+}

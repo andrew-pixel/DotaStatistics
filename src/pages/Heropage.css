@@ -1,0 +1,96 @@
+body{
+  background-color: var(--backgroundColor);
+  
+}
+.heroContainer {
+  max-width: 800px;
+  padding: 20px;
+  background: var(--backgroundColor2);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  
+  align-items: center;
+}
+p{
+  color: var(--textColor2);
+}
+
+.heroContainer img {
+  width: 100px;
+  height:auto;
+  margin-right: 15px;
+}
+
+.heroContainer h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: var(--textColor);
+}
+
+.heroContainer p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Layout for general stats */
+.stats {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--backgroundColor3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+/* Top items styling */
+.topitems {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--backgroundColor3);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topitems h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.topitems ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.topitems li {
+  width: 40px;
+  height: 40px;
+}
+
+/* Match performance styling */
+.matches {
+  margin-top: 20px !important;
+  padding: 15px !important;
+  border-radius: 8px;
+  background-color: var(--backgroundColor3) !important;
+  
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.matches h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+

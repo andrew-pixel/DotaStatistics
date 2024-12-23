@@ -1,0 +1,32 @@
+.positionContainer {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content:center; /* Space out items evenly */
+    flex-direction: row;
+    width: 100%; /* Container width */
+
+    height: auto;
+
+    margin: 0 auto; /* Center the container horizontally */
+    box-sizing: border-box; /* Include padding in the width */
+    gap: 2px; /* Add spacing between items */
+
+  }
+  
+  .mainContainer {
+    display: flex;
+    flex-direction: column; /* Stack the heading and positionContainer */
+    align-items: center; /* Center child elements horizontally */
+    width: 80%; /* Full width of the viewport */
+    max-width: 100%; /* Prevent overflow */
+    margin: auto;
+    box-sizing: border-box;
+  }
+  .mainContainer h1 {
+    align-self: flex-start; /* Aligns the heading to the left */
+    margin: 0; /* Remove default margins for consistent positioning */
+    padding-left: 20px; /* Optional: Add some padding from the left */
+    color: var(--textColor);
+    font-size: 2.5rem; 
+  }
+  

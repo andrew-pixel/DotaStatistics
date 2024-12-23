@@ -1,16 +1,38 @@
+:root {
+  --navbarColor : #374757;
+  --backgroundColor: #1e252b;
+  --backgroundColor2: #323a42;
+  --backgroundColor3: #35424e;
+  --blue1: #5a8bb0;;
+  
+  --textColor: #E0E1DD;
+  --textColor2: #919191;
+  
+  --primary-color-blue: #1a7bd1;
+  --secondary-color-blue: #33a6e8;;
+
+  --white:#E0E1DD;
+  --color1: #5c6d79;
+  --color2:  #7692a3;
+  --dark1: #1a1c1f;
+  --dark2: #3a3a3a;
+  --dark3: #4a4a4a;
+
+  --gold: #ffd700;
+  --gold1: #d4af37;
+  --gold2: #ffd700;
+
+  --greenColor: #06d6a0;
+  --redColor: #ef476f;
+}
+
+body {
+  background-color: var(--backgroundColor2);
+  color: var(--blue1);
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -21,18 +43,5 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

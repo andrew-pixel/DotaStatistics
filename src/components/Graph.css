@@ -1,0 +1,84 @@
+/* Base container styles for the graph component */
+.graphContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-1);
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button for toggling between AVG/Random match */
+  .graphContainer button {
+    margin-bottom: 16px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: var(--background-1);
+    background-color: var(--gold);
+    border: 1px solid var(--background-2);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .graphContainer button:hover {
+    background-color: var(--background-2);
+    color: var(--gold);
+  }
+  
+  .custom-tooltip {
+    background-color: rgba(7, 30, 51, 0.4);
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-tooltip p {
+    margin: 4px 0;
+  }
+  
+  .custom-tooltip p.positive {
+    color: var(--gold);
+    font-weight: bold;
+  }
+  
+  .custom-tooltip p.negative {
+    color: var(--background-2); /* Use a red or error-themed var */
+    font-weight: bold;
+  }
+  /* Styling for the summary stats container */
+  .summaryStats  {
+    padding: 16px;
+    background-color: var(--background-2) !important;
+    border-top: 1px solid var(--background-3);
+    border-radius: 8px;
+    margin-top: 16px;
+  }
+  
+  .summarySstats h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: var(--gold);
+  }
+  p{
+    color: var(--textColor)
+  }
+  .summaryStats p {
+    margin: 4px 0;
+    font-size: 14px;
+    color: var(--textColor)
+  }
+  
+  /* Conditional coloring for positive/negative differences */
+  .summaryStats p.positive {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .summaryStats p.negative {
+    color: red;
+    font-weight: bold;
+  }
+  

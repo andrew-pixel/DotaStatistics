@@ -1,0 +1,148 @@
+.personal {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+  h2 {
+    color: var(--textColor);
+    font-size: 1.5em;
+  }
+  
+  input[type="number"] {
+    padding: 8px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  h3 {
+    color: var(--textColor);
+  }
+  
+ 
+
+  .grid {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 16px;
+    width: 100%;
+    padding-bottom: 50px;
+    align-items: stretch;
+  }
+  
+  .matches {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    max-height: 80vh; /* Allows scrolling */
+    background-color: var(--backgroundColor2); /* Sets the list background color */
+    border-radius: 8px; /* Rounds the corners */
+    border: 1px solid var(--blue1); /* Adds a subtle border */
+    
+    scrollbar-width: thin; /* Firefox */
+    /* scrollbar-color: transparent transparent; Firefox */
+  }
+  
+  /* Match list item */
+  .matches li {
+    background-color: var(--backgroundColor2) !important;
+    
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .matches li:hover {
+    background-color: var(--backgroundColor2) ; /* Highlight on hover */
+  }
+  
+  .matches li.active {
+    background-color: var(--backgroundColor) !important; 
+  }
+  
+  .matches::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    background-color: transparent; /* Make track invisible */
+}
+  
+  .matches::-webkit-scrollbar-track {
+    background-color: var(--backgroundColor2);
+  }
+  .graph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .graph-header {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .graph-content {
+    width: 100%;
+    height: 70vh; /* Ensures the graph has a defined height */
+    background-color: var(--backgroundColor);
+    padding: 20px;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type=number] {
+    -moz-appearance: textfield; 
+}
+
+.playerCard {
+  display: flex; 
+  align-items: center; 
+  background-color: var(--backgroundColor2); 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  padding: 16px; 
+  width: 100%; 
+  max-width: 400px; 
+  margin: 16px auto; 
+}
+
+/* Avatar/Image Styling */
+.playerCard img {
+  width: 7vw; /* Adjust size of the image */
+
+  padding-right: 32px !important; /* Spacing between image and text */
+
+}
+
+
+/* Headings and Paragraph Styling */
+.playerCard-info h3,
+.playerCard-info p {
+  margin: 4px 0; /* Adjust spacing between lines */
+  color: var(--textColor); /* Use a text color variable */
+  font-size: 16px; /* Uniform font size */
+}
+.error-modal {
+  margin-top: 10px;
+  background-color: #ffecec;
+  color: #d8000c;
+  padding: 10px 15px;
+  border: 1px solid #d8000c;
+  border-radius: 5px;
+  font-size: 14px;
+}
