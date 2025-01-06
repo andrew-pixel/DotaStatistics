@@ -79,7 +79,7 @@ function PersonalPage() {
       const now = Date.now();
       const lastFetch = Number(localStorage.getItem("lastFetchTime") || 0);
       //const oneDay = 24 * 60 * 60 * 1000;
-      const oneDay = 24 * 60 * 60 * 1000;
+      const oneDay = 0.5 * 60 * 60 * 1000;
       const timeLeft = oneDay - (now - lastFetch);
       if (now - lastFetch < oneDay) {
         const storedMatches = localStorage.getItem("lastFetchedMatches");
