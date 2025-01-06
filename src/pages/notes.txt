@@ -1,6 +1,0 @@
-useEffect(() => {
-  localStorage.clear(); // Caution: This will clear all local storage
-  // or specifically:
-  localStorage.removeItem("lastFetchedMatches");
-  localStorage.removeItem("lastFetchTime");
-}, []);
