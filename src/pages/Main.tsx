@@ -22,7 +22,7 @@ function Main() {
         </div>
         <div className="navbar-center">
           <Link className='link' to="/Homepage">Trends</Link> 
-          <Link className='link' to="/Personalpage">DotaBuddy</Link>
+          <Link className='link' to="/Personalpage">DotaImpact</Link>
         </div>
         <div className="navbar-right">
           
